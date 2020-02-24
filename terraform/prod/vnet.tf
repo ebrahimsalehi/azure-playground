@@ -1,4 +1,7 @@
-variable "vnet_name" {description = "Please insert a name for vnet"}
+variable "vnet_name" {
+  description = "Please insert a name for vnet"
+  default = "my-virtual-network"
+}
 
 resource "azurerm_virtual_network" "MyVNet" {
   address_space = ["10.10.0.0/16"]

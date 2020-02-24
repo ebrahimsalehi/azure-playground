@@ -1,4 +1,7 @@
-variable "name" {description = "Please enter a valid name for subnet:pub1"}
+variable "name" {
+  description = "Please enter a valid name for subnet:pub1"
+  default = "publicsubnet1"
+}
 
 resource "azurerm_subnet" "pub1" {
   address_prefix = "10.10.1.0/24"
